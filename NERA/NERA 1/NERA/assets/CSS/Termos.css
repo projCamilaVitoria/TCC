@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Passion+One:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "Passion One", sans-serif;
+}
+
+html, body {
+  height: 100%;
+  background-image: url(../Images/Fundo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+:root {
+  --clr-bg: #073B4C;
+  --clr-card: rgba(255, 255, 255, 0.05);
+  --clr-input: rgba(178, 230, 200, 0.2);
+  --clr-btn: #B2E6C8;
+  --clr-btn-hover: #9AD6B4;
+  --clr-text: #B2E6C8;
+  --clr-titulo: #B2E6C8;
+}
+
+/* ========================= */
+/* LOGO */
+/* ========================= */
+.logo-container {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.logo-nera {
+  width: 120px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.logo-nera:hover {
+  transform: scale(1.05);
+}
+
+/* ========================= */
+/* TÍTULO */
+/* ========================= */
+.titulo {
+  color: var(--clr-titulo);
+  font-family: "Passion One", sans-serif;
+  font-size: 2em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+.card-termos {
+  background: var(--clr-card);
+  backdrop-filter: blur(5px);
+  border-radius: 18px;
+  width: 80%;
+  max-width: 350px;
+  padding: 25px;
+  color: var(--clr-text);
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  margin-bottom: 25px;
+}
+
+.texto {
+  font-size: 0.9em;
+  color: var(--clr-text);
+  line-height: 1.5em;
+  text-align: justify;
+}
+
+/* ========================= */
+/* FORMULÁRIO DE ACEITE */
+/* ========================= */
+.termos-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  width: 80%;
+  max-width: 350px;
+}
+
+.aceitar {
+  background: var(--clr-card);
+  width: 100%;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--clr-text);
+  font-size: 0.95em;
+}
+
+.aceitar input {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--clr-btn);
+  cursor: pointer;
+}
+
+/* ========================= */
+/* BOTÃO CONFIRMAR */
+/* ========================= */
+#confirmar {
+  background-color: var(--clr-btn);
+  color: var(--clr-bg);
+  border: none;
+  border-radius: 20px;
+  padding: 10px 40px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#confirmar:hover {
+  background-color: var(--clr-btn-hover);
+}
+
+/* ========================= */
+/* RESPONSIVIDADE */
+/* ========================= */
+@media (max-width: 500px) {
+  .titulo {
+    font-size: 1.6em;
+  }
+
+  .card-termos {
+    width: 85%;
+    padding: 20px;
+  }
+
+  .termos-form {
+    width: 85%;
+  }
+}
