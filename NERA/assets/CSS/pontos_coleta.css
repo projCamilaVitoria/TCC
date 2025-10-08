@@ -1,0 +1,172 @@
+/* ========================= */
+/* FUNDO E BODY */
+/* ========================= */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Passion One', sans-serif;
+    margin: 0;
+    background-color: #073B4C;
+}
+
+/* ========================= */
+/* ÍCONE */
+.Icon {
+    width: 18%;
+    max-width: 120px;
+    margin-top: 20px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.Icon:hover {
+    transform: scale(1.05);
+}
+
+/* ========================= */
+/* TÍTULO */
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #B2E6C8;
+    margin: 10px 0 30px 0;
+    text-align: center;
+    background-color: transparent;
+}
+
+/* ========================= */
+/* FORMULÁRIO E CAMPOS */
+.form-pontos-coleta {
+    width: 80%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.campo input,
+.campo select {
+    width: 100%;
+    padding: 14px 16px;
+    border: none;
+    border-radius: 10px;
+    background-color: #B2E6C8;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #073B4C;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.campo input:focus,
+.campo select:focus {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transform: scale(1.02);
+}
+
+/* ========================= */
+/* SELECT E OPÇÕES */
+.campo select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.campo select option {
+    background-color: #B2E6C8;
+    color: #073B4C;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* ========================= */
+/* BOTÕES */
+button {
+    align-self: flex-end;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #B2E6C8;
+    color: #073B4C;
+    font-size: 1.4rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+button:active {
+    opacity: 0.8;
+    transform: translateY(0);
+}
+
+/* ========================= */
+/* MAPA */
+.map_container {
+    width: 100%;
+    min-height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/* ========================= */
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .Icon {
+        max-width: 100px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .campo input,
+    .campo select,
+    button {
+        font-size: 1.2rem;
+        padding: 12px;
+    }
+
+    .map_container {
+        min-height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Icon {
+        max-width: 80px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+
+    .campo input,
+    .campo select,
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    .map_container {
+        min-height: 150px;
+    }
+}
